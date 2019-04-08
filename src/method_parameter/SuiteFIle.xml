@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Default_Suite">
+				<test name="test1" verbose="2">
+						<classes>
+					
+									<class name="method_parameter.Run_Repository"></class>
+												
+						</classes>
+				</test>
+</suite>

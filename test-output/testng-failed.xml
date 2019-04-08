@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [CrossBrowser]" guice-stage="DEVELOPMENT">
+  <parameter name="appUrl" value="http://cleartrip.com"/>
+  <test thread-count="5" parallel="tests" name="Test2(failed)">
+    <classes>
+      <class name="testNG_CrossBrowser.CrossBroswer">
+        <parameter name="broswername" value="firefox"/>
+        <methods>
+          <include name="loadApp" invocation-numbers="0"/>
+          <include name="launchBrowser" invocation-numbers="0"/>
+          <include name="flight_search"/>
+        </methods>
+      </class> <!-- testNG_CrossBrowser.CrossBroswer -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test thread-count="5" parallel="tests" name="Test1(failed)">
+    <classes>
+      <class name="testNG_CrossBrowser.CrossBroswer">
+        <parameter name="broswername" value="chrome"/>
+        <methods>
+          <include name="flight_search"/>
+        </methods>
+      </class> <!-- testNG_CrossBrowser.CrossBroswer -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [CrossBrowser] -->

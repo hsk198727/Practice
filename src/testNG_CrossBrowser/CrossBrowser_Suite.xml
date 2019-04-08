@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="CrossBrowser" parallel="tests">
+
+	<!-- parameters from suite -->
+	<parameter name="appUrl" value="http://cleartrip.com"></parameter>
+	
+	<!-- run with chrome Browser -->
+	<test name="Test1" verbose="2">
+				<classes>
+						<class name="testNG_CrossBrowser.CrossBroswer">
+								<parameter name="broswername" value="chrome"></parameter>
+						</class>
+				</classes>	
+	</test>
+	<test name="Test2" verbose="2">
+				<classes>
+						<class name="testNG_CrossBrowser.CrossBroswer">
+								<parameter name="broswername" value="firefox"></parameter>
+						</class>
+				</classes>	
+	</test>
+</suite>

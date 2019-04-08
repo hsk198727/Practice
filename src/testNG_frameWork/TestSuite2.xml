@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="My_Second_Suite">
+	<test name="test1" verbose="2">
+		<classes>
+				<class name="testNG_frameWork.Before_class_And_AfterClass"></class>
+		</classes>	
+	</test>
+</suite>
